@@ -150,7 +150,7 @@
                         </svg>
                       </div>
                       <div class="flex-grow pl-4">
-                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 1</h2>
+                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ETAPE 1</h2>
                         <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
                       </div>
                     </div>
@@ -164,7 +164,7 @@
                         </svg>
                       </div>
                       <div class="flex-grow pl-4">
-                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 2</h2>
+                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ETAPE 2</h2>
                         <p class="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.</p>
                       </div>
                     </div>
@@ -179,7 +179,7 @@
                         </svg>
                       </div>
                       <div class="flex-grow pl-4">
-                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 3</h2>
+                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ETAPE 3</h2>
                         <p class="leading-relaxed">Coloring book nar whal glossier master cleanse umami. Salvia +1 master cleanse blog taiyaki.</p>
                       </div>
                     </div>
@@ -194,7 +194,7 @@
                         </svg>
                       </div>
                       <div class="flex-grow pl-4">
-                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 4</h2>
+                        <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ETAPE 4</h2>
                         <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
                       </div>
                     </div>
@@ -211,7 +211,7 @@
                       </div>
                     </div>
                   </div>
-                  <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="step">
+                  <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://dummyimage.com/1200x500" alt="ETAPE">
                   
                 </div>
               </div>
@@ -220,14 +220,27 @@
 
     </div>
 
+    <style type="text/css">
+      span {
+        background: white !important;
+      }
+    </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
 
     <script>
-
-        new fullpage('#fullpage', {
-                autoScrolling: true
-            });
-
+      new fullpage('#fullpage', {
+          navigation: true,
+          responsiveWidth: 700,
+          showActiveTooltip: true,
+          parallax: true,
+          scrollingSpeed: 2500,
+          controlArrows: false,
+          slidesNavigation: true,
+          onLeave: function(origin, destination, direction){
+              console.log("Leaving section" + origin.index);
+          },
+      });
     </script>
 </body>
 </html>
